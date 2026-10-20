@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { projects } from './data/projects.js';
+import Header from './components/Header.jsx';
 import ProjectList from './components/ProjectList.jsx';
 import TagFilter from './components/TagFilter.jsx';
 import ContactForm from './components/ContactForm.jsx';
@@ -19,7 +20,7 @@ export default function App() {
 
   return (
     <main className="container">
-      <h1>Dự án của mình</h1>
+      <Header />
       <TagFilter
         tags={tags}
         activeTag={activeTag}
