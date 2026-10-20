@@ -10,4 +10,4 @@ createRoot(document.getElementById('root')).render(
   </StrictMode>,
 )
 
-getRepos("mailinh21042005-rgb").then(console.log)
+getRepos("thienlam23130146").then(console.log)

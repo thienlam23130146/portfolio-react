@@ -109,3 +109,9 @@ code {
   padding: 4px 8px;
   background: var(--code-bg);
 }
+
+.skeleton { 
+  height: 3rem; 
+  margin: .5rem 0; 
+  background: #e2e8f0; 
+}

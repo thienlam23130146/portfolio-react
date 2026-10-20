@@ -3,6 +3,7 @@ import { projects } from './data/projects.js';
 import ProjectList from './components/ProjectList.jsx';
 import TagFilter from './components/TagFilter.jsx';
 import ContactForm from './components/ContactForm.jsx';
+import { GitHubRepos } from './components/GitHubRepos.jsx';
 import './index.css';
 
 const tags = [...new Set(
@@ -25,6 +26,10 @@ export default function App() {
         onChange={setActiveTag}
       />
       <ProjectList projects={shown} />
+      <section id="github-repos">
+        <h2>Repo GitHub</h2>
+        <GitHubRepos username="thienlam23130146" />
+      </section>
       <section id="contact">
         <h2>Liên hệ</h2>
         <ContactForm />
